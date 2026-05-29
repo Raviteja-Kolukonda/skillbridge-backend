@@ -1,97 +1,54 @@
-# 🚀 SkillBridge Frontend
+# 🚀 SkillBridge Backend
 
-SkillBridge is a web application that connects students with startup projects. The platform helps students showcase their skills, discover relevant projects, apply for opportunities, and track their application status. Startups can post projects, review applications, and manage candidates through a simple dashboard.
+SkillBridge Backend is a Spring Boot REST API that supports the SkillBridge platform. It handles user management, project management, applications, and skill-based project matching between students and startups.
 
 ## Features
 
-### Student Features
-
 * User Registration and Login
 * Profile Management
-* Profile Completion Tracking
-* Skill-Based Project Matching
-* Search Projects by Title or Skills
-* Apply for Projects
-* Track Application Status
-* GitHub, LinkedIn, and Resume Links
-
-### Startup/Admin Features
-
-* Post New Projects
-* View All Projects
-* Delete Projects
-* View Applications
-* Accept or Reject Applications
+* Project Creation and Management
+* Project Applications
+* Application Status Tracking
+* Skill Match Score Calculation
+* RESTful APIs
+* MySQL Database Integration
 
 ## Tech Stack
 
-### Frontend
-
-* React.js
-* React Router DOM
-* Axios
-* Bootstrap 5
-* JavaScript
-* HTML5
-* CSS3
-
-### Backend
-
+* Java
 * Spring Boot
-* REST APIs
+* Spring Data JPA
 * MySQL
+* Maven
+* REST APIs
 
-## Project Structure
+## API Modules
 
-```text
-src/
-├── pages/
-│   ├── Login.js
-│   ├── Signup.js
-│   ├── Dashboard.js
-│   ├── Profile.js
-│   ├── ProjectDetails.js
-│   ├── MyApplications.js
-│   ├── Admin.js
-│   └── AdminApplications.js
-│
-├── App.js
-└── index.js
-```
+* User APIs
+* Project APIs
+* Application APIs
+* Skill Match APIs
 
-## Installation
+## Running the Application
 
-Install dependencies:
+1. Configure MySQL in `application.properties`
+2. Run the application:
 
 ```bash
-npm install
+mvn spring-boot:run
 ```
 
-Start the application:
-
-```bash
-npm start
-```
-
-The application runs on:
+Backend runs on:
 
 ```text
-http://localhost:3000
+http://localhost:8080
 ```
-
-## Future Improvements
-
-* Project recommendations based on skills
-* Email notifications
-* Resume upload support
-* Advanced project filtering
-* Improved dashboard analytics
 
 ## Developer
 
 Raviteja Kolukonda
 
-Full Stack Developer
+Aspiring Full Stack Developer
 
-Technologies:
-React • Spring Boot • MySQL • REST APIs
+Tech Stack:
+Spring Boot • Java • MySQL • REST APIs
